@@ -9,7 +9,7 @@ with open("./README.rst", "r") as readme:
 setup(
     name='pytest-custom-nodeid',
     url='https://github.com/fungaegis/pytest-custom-nodeid',
-    version='0.1',
+    version='0.2',
     author="fungaegis",
     author_email="fungaegis@gmail.com",
     description='Custom grouping for pytest-xdist, rename test cases name and test cases nodeid, support allure report',
@@ -23,7 +23,8 @@ setup(
     license='MIT License',
     py_modules=['pytest_custom_nodeid'],
     keywords=[
-        'pytest', 'py.test', 'pytest_custom_nodeid', 'concurrency', 'xdist', 'pytest-xdist', 'allure', 'rename', 'name'
+        'pytest', 'py.test', 'pytest_custom_nodeid', 'concurrency', 'xdist', 'pytest-xdist', 'allure',
+        'rename', 'name', 'skip'
     ],
 
     install_requires=[
