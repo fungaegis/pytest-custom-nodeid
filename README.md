@@ -18,8 +18,8 @@ This function is particularly useful in scenario testing and other test sets whe
 to avoid failure of previous use cases and unnecessary execution of subsequent use cases
 
 Format:
-  - name: ids
-  - nodeid: `group_name::ids`
+- name: ids
+- nodeid: `group_name::ids`
 
 支持自定义分组 :`{分组名}` 或者 `{文件::Class}`
 
@@ -34,8 +34,8 @@ Format:
 这功能在场景测试等存在用例依赖的测试集里面尤其好用,避免应该前序用例失败,无谓执行后续用例
 
 格式:
-    - 测试名: 进行参数化时的ids参数值
-    - nodeid: `首字母大写分组名::ids名`
+- 测试名: 进行参数化时的ids参数值
+- nodeid: `首字母大写分组名::ids名`
 
 
 install

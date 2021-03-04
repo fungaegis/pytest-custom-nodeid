@@ -19,7 +19,7 @@ def pytest_addoption(parser):
 
 @pytest.mark.trylast
 def pytest_collection_modifyitems(items):
-    value = items[0].config.getvalue("rename")
+    value = items[0].config.getoption("rename")
     if value == "on":
         group_pattern = r"{([\w:]+)}"
         for item in items:
