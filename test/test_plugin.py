@@ -11,8 +11,8 @@ def test_help(testdir):
         """
     )
     result = testdir.runpytest("--help")
-    result.stdout.fnmatch_lines(["*--switch*"])
-    result.stdout.fnmatch_lines(["*Custom grouping for pytest-xdist*"])
+    result.stdout.fnmatch_lines(["*rename*"])
+    result.stdout.fnmatch_lines(["*custom rename nodeid and name*"])
 
 
 def test_without(testdir):

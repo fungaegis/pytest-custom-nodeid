@@ -1,3 +1,4 @@
+import os
 import re
 import json
 import pytest
@@ -54,7 +55,14 @@ def pytest_configure(config):
     data = []
     file = config.getoption("json")
     if file:
-        with open(file, r'r') as f:
+        relative = os.path.join(os.getcwd(), file)
+        if os.path.exists(relative):
+            path = relative
+        elif os.path.exists(file):
+            path = file
+        else:
+            raise FileNotFoundError(f"Can't find file: {file}")
+        with open(path, r'r') as f:
             data.extend(json.load(f)["skip"])
 
     skip = config.getoption("skip")

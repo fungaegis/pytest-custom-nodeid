@@ -9,7 +9,7 @@ with open("./README.rst", "r") as readme:
 setup(
     name='pytest-custom-nodeid',
     url='https://github.com/fungaegis/pytest-custom-nodeid',
-    version='0.2',
+    version='0.3',
     author="fungaegis",
     author_email="fungaegis@gmail.com",
     description='Custom grouping for pytest-xdist, rename test cases name and test cases nodeid, support allure report',

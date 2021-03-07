@@ -52,8 +52,8 @@ options:
 - `--rename` It is used to open the plug-in, rename the marked use cases, code the unmarked use cases only, and close "off" by default
 - `--skip` If it fails, the subsequent use case will be skipped. The tag name is needed here. 
   example: if the tag in IDS is '{login}', the skip tag is '--skip=login`
-- `--skip-json` When there are too many tags to be marked, it can be stored in a JSON file. 
-  Here you need to enter the absolute address, which can be used with 'skip'. The two tags will be combined. 
+- `--skip-json` When there are too many tags to be marked, it can be stored in a JSON file. which can be used with 'skip'.
+  The two tags will be combined. 
   
 [JSON format](./demo.json)
 
@@ -69,7 +69,7 @@ tip:
 选项:
 - `--rename`: 用于开启该插件,将对使用了标记的用例进行重命名,未标记的仅做编码处理,默认为"off"关闭
 - `--skip`: 失败跳过后续用例,此处需要使用标记名作为标记.例如 ids中标记: `{Login}` 则跳过标记为:`--skip=Login` 
-- `--skip-json`: 在需要标记的数量过多时,可用json文件存储.此处需要输入绝对地址,可与`skip`使用,两者标记将合并
+- `--skip-json`: 在需要标记的数量过多时,可用json文件存储.可与`skip`使用,两者标记将合并
 
 小贴士:
 1. skip和skip-json 大小写敏感
@@ -122,4 +122,14 @@ nodeid will be renamed to
 - group_2::group_8
 - file::class::group_9
 
+Update log
+=====
+### v0.2
+Add label alias, fail skip function
 
+增加标注class 失败跳过功能
+
+### v0.3
+Add relative address support for `skip-json`
+
+增加对`skip-json`相对地址的支持

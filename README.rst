@@ -47,6 +47,8 @@ tip:
 4. `Skip` and `skip-json` are case-sensitive
 5. Do not use '-x' in pytest-xdist. If the use case fails, the rest of the use cases will stop running
 
+[Chinese](https://github.com/fungaegis/pytest-custom-nodeid
+
 Demo
 ====
 
@@ -79,3 +81,18 @@ nodeid will be renamed to
 - group_1::group_7
 - group_2::group_8
 - file::class::group_9
+
+
+log
+====
+
+v0.2
+>>>>>>>>>
+
+Add label alias, fail skip function
+
+
+v0.3
+>>>>>>>>>
+
+Add relative address support for `skip-json`
